@@ -193,6 +193,8 @@ void main() {
     expect(shouldPlayDonationSuccessVideo('FAILED'), isFalse);
     expect(shouldPlayDonationSuccessVideo(null), isFalse);
     expect(donationSuccessVideoAsset, 'assets/videos/boy_thankyou.mp4');
+    expect(donationSuccessVideoMuted, isTrue);
+    expect(donationSuccessVideoFallbackSize, const Size(720, 1520));
   });
 
   test(
